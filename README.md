@@ -26,6 +26,10 @@ create secret key - very important;
 
 - **root@comp %** ```sudo sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml```
 
+Modify .env File
+
+- **root@comp %** ```nano .env```
+
 start up docker container
 
 - **root@comp %** ```sudo docker-compose up```
